@@ -1,0 +1,35 @@
+<!--
+    return pode ser usado em uma função para retornar algo
+-->
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var vitoriasPassada = parseInt(prompt("Informe a quantidade de vitórias: "));
+var empatesPassada = parseInt(prompt("Informe a quantidade de empates: "));
+var pontosPassada = (vitoriasPassada * 3) + empatesPassada;
+
+var vitoriasAtual = parseInt(prompt("Informe a quantidade de vitórias: "));
+var empatesAtual = parseInt(prompt("Informe a quantidade de empates: "));
+var pontosAtual = (vitoriasAtual * 3) + empatesAtual;
+
+if (pontosPassada < pontosAtual){
+    mostra("O Palmeiras fez menos pontos no campeonato passado " + pontosPassada)
+}
+
+if (pontosPassada == pontosAtual) {
+    mostra("O Palmeiras fez o mesmo número de pontos do campeonato passado " + pontosPassada)
+} 
+    else {
+        mostra("O Palmeiras fez mais pontos no campeonato atual " + pontosAtual)
+    } 
+
+</script>

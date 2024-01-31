@@ -1,0 +1,30 @@
+<!--
+    return pode ser usado em uma função para retornar algo
+-->
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var quantidadeFamiliar = parseInt(prompt("informe a quantidade de familiares"))
+
+var pessoas = 1;
+var totalIdades = 0;
+while(pessoas <= quantidadeFamiliar){
+    var idade = parseInt(prompt("Digite a idade do familiar: "))
+    totalIdades = totalIdades + idade;
+    pessoas++;
+}
+
+var mediaIdades = totalIdades / quantidadeFamiliar;
+mostra("A idade média familiar é: " + mediaIdades)
+
+
+</script>

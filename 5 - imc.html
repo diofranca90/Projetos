@@ -1,0 +1,26 @@
+<!--
+    return pode ser usado em uma função para retornar algo
+-->
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function calcularImc (peso, altura){
+    return peso / (altura * altura); //Ordenar do calculo da divisão
+ }
+
+var nome = prompt("Informe seu nome: ") 
+var altura = prompt(nome + ", informe sua altura: ")
+var peso = prompt(nome +  ", informe seu peso: ")
+
+mostra(nome + ", seu imc é: " + calcularImc(85, 1.81));
+
+</script>
